@@ -1,0 +1,24 @@
+version: '3'
+services:
+  map:
+    build: ./MAP-Excution
+    dns: 8.8.8.8
+    depends_on:
+      - db
+    environment:
+      - DB=mongodb://hero:0hero!@ds149914.mlab.com:49914/superhero_library
+
+  api:
+    build: ./JSON-Server
+    depends_on:
+      - db
+    environment:
+      - DB=mongodb://hero:0hero!@ds149914.mlab.com:49914/superhero_library
+      - PORT=3030
+    ports:
+      - "3030:3030"
+
+  db:
+   image: mongo
+   ports:
+     - "27027:27017"

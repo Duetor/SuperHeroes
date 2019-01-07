@@ -1,0 +1,26 @@
+{
+  "name": "superhero",
+  "version": "0.0.0",
+  "main": "basehero.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node basehero.js"
+  },
+  "dependencies": {
+    "mongodb": "^3.1.10",
+    "mongoose": "^4.13.5"
+  },
+  "xo": {
+    "envs": [
+      "node"
+    ],
+    "space": 2,
+    "rules": {
+      "max-len": [
+        "error",
+        80,
+        2
+      ]
+    }
+  }
+}

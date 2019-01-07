@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: white;
+  font-family: Verdana, sans-serif;
+  font-size: 100%;
+}
+#batman {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 400px;
+  left: 800px;
+}
+#joker {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 80px;
+  left: 300px;
+}
+#Gotam {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 80px;
+  left: 300px;
+}
+#ville {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 650px;
+  left: 600px;
+}
+#base {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 400px;
+  left: 800px;
+}
